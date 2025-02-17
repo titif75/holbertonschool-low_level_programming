@@ -2,23 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
-    srand(time(NULL));
-    int n; // Déclaration de n
-
-    n = rand() % 100; // Initialisation de n
-
-    printf("The string Last digit of %d is, ", n);
-
-    int last_digit = n % 10;
-
-    if (last_digit > 5) {
-        printf("and is greater than 5\n");
-    } else if (last_digit == 0) {
-        printf("and is 0\n");
-    } else {
-        printf("and is less than 6 and not 0\n");
-    }
-
-    return 0;
+int main(void)
+{
+	int n;
+	int last_digit;  // Variable pour stocker le dernier chiffre de n
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	last_digit = n % 10;  // Récupération du dernier chiffre de n
+	printf("Last digit of %d is %d", n, last_digit);
+ 	if(last_digit > 5)
+	  printf("and is a greater than 5\n");
+	else if(last_digit == 0)
+	  printf("and is 0\n");
+	else
+          printf("and is less than 6 and not 0\n");
+	return (0);
 }
