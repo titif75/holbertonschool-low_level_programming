@@ -3,10 +3,10 @@
 #include <time.h>
 
 int main() {
-    // Initialiser la graine aléatoire
+    // Initialisation de la graine aléatoire
     srand(time(NULL));
 
-    // Générer un nombre aléatoire
+    // Génération d'un nombre aléatoire
     int n = rand() % 200 - 100; // Génère des nombres entre -100 et 99
 
     // Afficher si le nombre est positif, négatif ou zéro
