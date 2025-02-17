@@ -1,26 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>  // Pour srand() et rand()
-#include <time.h>    // Pour time()
+#include <stdlib.h>
+#include <time.h>
+/**
+* main - Verifier si nombre positif ou negatif
+*
+* Return: 0
+*/
 
-int main(void)  // La fonction main doit être déclarée avec void si elle ne prend pas d'arguments
+int main(void)
 {
-    /* Initialisation de la graine aléatoire */
-    srand(time(0));  // Initialiser la graine avec l'heure actuelle
+	int n;
 
-    int n;  // Déclare la variable n au début de la fonction (conformément à C90)
-    n = rand() % 200 - 100;  // Génère des nombres entre -100 et 99
-
-    if (n > 0)
-    {
-        printf("Positive\n");
-    }
-    else if (n < 0)
-    {
-        printf("Negative\n");
-    }
-    else
-    {
-        printf("Zero\n");
-    }
-    return (0);  // Retourne 0 pour indiquer une exécution réussie
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+if (n> 0) {
+printf(" is positive\n");
+} else if (n < 0) {
+} else {
+printf(" is zero\n");
+}
+	return (0);
 }
