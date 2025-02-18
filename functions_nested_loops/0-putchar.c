@@ -7,9 +7,9 @@
 #include <unistd.h>
 
 /**
- * main - Prints _putchar
+ * main - Entry point
  *
- * Return : A 0.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
