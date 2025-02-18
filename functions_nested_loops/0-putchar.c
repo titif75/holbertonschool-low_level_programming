@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+* Fonction principale qui imprime "_putchar" suivi d'un saut de ligne.
+*
+* @return 0
+*/
 int main(void)
 {
 _putchar('_');
