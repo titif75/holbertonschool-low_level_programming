@@ -1,18 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(void) {
-    srand(time(NULL));
-    int n = rand() % 100; /* Générer un nombre aléatoire entre 0 et 99 */
-    printf("The string Last digit of %d is, ", n);
-    int last_digit; /* Variable pour stocker le dernier chiffre de n */
-    last_digit = n % 10; /* Calculer la dernière chiffre */
-    if (last_digit > 5) {
-        printf("and is greater than 5\n");
-    } else if (last_digit == 0) {
-        printf("and is 0\n");
-    } else {
-        printf("and is less than 6 and not 0\n");
+#include <stdio.h>
+/**
+* main - Entry program
+
+int main(void) -
+{
+	int  n;
+
+    srand(time(0));
+    n = rand() - RAND_MAX / 2 
+    int dernier_chiffre = n % 10;
+
+    printf("Last digit of %d is %d and ", n, dernier_chiffre);
+
+    if (dernier_chiffre > 5)
+    {
+        printf("is greater than 5\n");
     }
-    return 0;
+    else if (dernier_chiffre == 0)
+    {
+        printf("is 0\n");
+    }
+    else
+    {
+        printf("is less than 6 and not 0\n");
+    }
+	
+	return (0);
 }
