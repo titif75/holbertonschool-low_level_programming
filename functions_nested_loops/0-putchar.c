@@ -1,5 +1,8 @@
 #include "main.h"
 /**
+* Fonction principale
+*/
+/**
 * Fonction principale qui imprime "_putchar" suivi d'un saut de ligne.
 *
 * @return 0
