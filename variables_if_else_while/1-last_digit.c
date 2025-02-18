@@ -2,7 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Entry program
+ * main - Entry point of the program
+ * Description: This function generates a random number and prints its last digit with the appropriate message.
+ * Return: Always 0 (Success)
+ */
+
 
 int main(void) -
 {
