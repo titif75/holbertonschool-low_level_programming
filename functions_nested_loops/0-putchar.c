@@ -7,9 +7,9 @@
 #include <unistd.h>
 
 /**
- * main - Description de la fonction main
+ * main - Prints _putchar
  *
- * Return : 0.
+ * Return : A 0.
  */
 
 int main(void)
