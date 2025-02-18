@@ -1,12 +1,14 @@
+ 
+
 #include "main.h"
 #include <stdio.h>
 #include <unistd.h>
 
 /**
-* main - Description
-*
-* Return : 0.
-*/
+ * main - Description de la fonction main
+ *
+ * Return : 0.
+ */
 
 int main(void)
 {
