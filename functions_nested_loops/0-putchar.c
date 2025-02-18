@@ -5,7 +5,9 @@
 /**
 * Fonction principale qui imprime "_putchar" suivi d'un saut de ligne.
 *
-* @return 0
+* Description:
+* Affiche le texte "_putchar" suivi d'un saut de ligne.
+* @return (int) 0 si l'exécution est reussie.
 */
 int main(void)
 {
