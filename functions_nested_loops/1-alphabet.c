@@ -1,16 +1,15 @@
-/* main.c */
-#include <unistd.h>
-void _putchar(char c) { write(1, &c, 1); }
-void print_alphabet(void);  // Ajout du prototype de la fonction
-int main(void) { 
-print_alphabet(); 
-return 0; 
+#include <stdio.h>
+void _putchar(char c){
+putchar(c);
 }
-void print_alphabet(void) { 
-char letter = 'a'; 
-while (letter <= 'z') { 
-_putchar(letter); 
-letter++; 
-} 
-_putchar('\n'); 
+void print_alphabet(void){
+char c;
+for(c='a';c<='z';c++){
+_putchar(c);
+}
+_putchar('n\');
+}
+int main(){
+print_alphabet();
+return (0);
 }
