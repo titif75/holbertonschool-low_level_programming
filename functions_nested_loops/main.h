@@ -1,5 +1,6 @@
-#ifndef MAIN_H  
-#define MAIN_H  
+/* main.h */
+#ifndef MAIN_H
+#define MAIN_H
+void print_alphabet(void);
 void print_alphabet_x10(void);
-/*fin du fichier d'en tête */
-#endif // MAIN_H
+#endif /* MAIN_H */ 

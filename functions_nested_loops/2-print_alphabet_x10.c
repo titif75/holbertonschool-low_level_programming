@@ -1,15 +1,24 @@
 #include "main.h"
-#include <stdio.h>
-void _putchar(char c);
+#include <unistd.h>
+
+void print_alphabet(void)
+{
+    char letter = 'a';
+
+    while (letter <= 'z')
+    {
+        write(1, &letter, 1);
+        letter++;
+    }
+    write(1, "\n", 1);
+}
+
 void print_alphabet_x10(void)
 {
-int i, j;
-for (i = 0; i < 10; i++) 
-{
-for (j = 'a'; j <= 'z'; j++) 
-{
-_putchar(j);
-}
-_putchar('\n');
-}
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        print_alphabet();
+    }
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*main.c*/
 #include "main.h"
 int main(void) 
 {  
