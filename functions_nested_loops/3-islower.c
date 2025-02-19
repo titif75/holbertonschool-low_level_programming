@@ -16,4 +16,3 @@ else
 return (0);  /* Caractère non minuscule */
 }
 }
-
