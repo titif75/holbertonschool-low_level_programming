@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* _islower - Fonction qui vérifie si un caractère est une minuscule.
-* @c: caractère à vérifier.
+* _islower - vérifie si un caractère est une minuscule.
+* @c: le caractère à vérifier.
 *
 * Return: 1 si le caractère est une minuscule, 0 sinon.
 */
