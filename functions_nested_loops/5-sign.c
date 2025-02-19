@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * print_sign - imprime le signe d'un nombre
 * @n: le nombre à vérifier
