@@ -1,10 +1,7 @@
 #include "main.h"
+void jack_bauer(void);
 int main(void)
 {
-int r;
-r = _islower('a');
-_putchar(r + '0');
-r = _islower('Z');
-_putchar(r + '0');    
+jack_bauer();
 return (0);
 }

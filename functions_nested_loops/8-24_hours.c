@@ -1,17 +1,17 @@
-#include <stdio.h>
+#include "main.h"  // Si vous avez un fichier d'en-tête
 void jack_bauer(void)
 {
-int heure, minute;
-for (heure = 0; heure < 24; heure++)
+int h, m;
+for (h = 0; h < 24; h++)  // De 00 à 23
 {
-for (minute = 0; minute < 60; minute++)
+for (m = 0; m < 60; m++)  // De 00 à 59
 {
-printf("%02d:%02d\n", heure, minute);
+_putchar((h / 10) + '0');  // Affiche les dizaines d'heures
+_putchar((h % 10) + '0');  // Affiche les unités d'heures
+_putchar(':');
+_putchar((m / 10) + '0');  // Affiche les dizaines de minutes
+_putchar((m % 10) + '0');  // Affiche les unités de minutes
+_putchar('\n');
 }
 }
-}
-int main(void)
-{
-jack_bauer();
-return 0;
 }
