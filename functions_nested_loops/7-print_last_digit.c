@@ -1,14 +1,12 @@
+#include "main.h"
 int print_last_digit(int n)
 {
-    int last_digit;
-
-    /* Get absolute value of last digit using modulo */
-    last_digit = n % 10;
-    if (last_digit < 0)
-        last_digit = -last_digit;
-
-    /* Print the digit using _putchar */
-    _putchar(last_digit + '0');
-
-    return (last_digit);
+int last_digit;
+/* Get absolute value of last digit using modulo */
+last_digit = n % 10;
+if (last_digit < 0)
+last_digit = -last_digit;
+/* Print the digit using _putchar */
+_putchar(last_digit + '0');
+return (last_digit);
 }
