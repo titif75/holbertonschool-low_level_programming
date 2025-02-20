@@ -1,7 +1,7 @@
 #include "main.h"                                          
 /**
 * definir la table de 9
-*
+*/
 void times_table(void)                                      
 {                                                            
     int i, j, product;                                      
