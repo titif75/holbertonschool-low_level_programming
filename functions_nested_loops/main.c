@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - Programme principal pour tester _islower
+* main - Programme principal pour tester 
 *
 * Return: 0 (succès)
 */
