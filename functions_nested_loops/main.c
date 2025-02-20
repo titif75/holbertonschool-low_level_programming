@@ -4,7 +4,6 @@
 */
 int main(void)                                                            
 {                                                                         
-int result = add(2, 3);
-printf("%d\n", result);                                                     
+times_table();
 return 0;                                                              
 }                                                                         
