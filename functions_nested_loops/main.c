@@ -4,6 +4,7 @@
 */
 int main(void)                                                            
 {                                                                         
-print_to_98(105);                                                     
+int result = add(2, 3);
+printf("%d\n", result);                                                     
 return 0;                                                              
 }                                                                         
