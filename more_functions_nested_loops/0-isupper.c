@@ -1,5 +1,5 @@
 #include "main.h"
-int _isupper(int c)
+int _isupper(int c) /*decription de la fonction*/
 {
 if (c >= 'A' && c <= 'Z')
 return (1); /*c est une lettre majuscule*/
