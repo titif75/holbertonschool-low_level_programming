@@ -1,4 +1,5 @@
-#include <main.h>
+#include "main.h"
+#include "_putchar.c"
 int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z')
