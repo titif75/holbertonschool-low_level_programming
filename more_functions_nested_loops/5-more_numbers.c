@@ -1,5 +1,7 @@
 #include "main.h"
-void more_numbers(void)
+/**
+* more_numbers - imprime les nombres de 0 à 14, dix fois, suivis d'un saut de ligne
+*/void more_numbers(void)
 {
 int i, j;
 for (i = 0; i < 10; i++)
