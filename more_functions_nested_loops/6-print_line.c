@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /* Déclaration de la fonction _putchar */
 void print_line(int n){
 if (n <= 0){
