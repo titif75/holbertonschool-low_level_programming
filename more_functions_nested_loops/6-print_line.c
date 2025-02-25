@@ -1,19 +1,22 @@
-#include "main.h"
-/**
-* main - caractere qui imprime ligne continue
-*/
-void _putchar(char c){
-putchar(c)  
+/* Déclaration de la fonction _putchar */
+int _putchar(char c) {
+return write(1, &c, 1);
 }
-void print_line(int n){
-if (n <= 0){
-_putchar(' \n ');
-}
-else{
-for (int i = 0; i < n; i++){
+void print_line(int n) {
+if (n <= 0) {
+_putchar('\n');
+} else {
+int i;
+for (i = 0; i < n; i++) {
 _putchar('_');
 }
-_putchar('\n);
+_putchar('\n');
 }
 }
-return (ø);
+
+int main() {
+print_line(5);  // Affiche "_____"
+print_line(0);  // Affiche juste un saut de ligne
+print_line(-3); // Affiche juste un saut de ligne
+return 0;
+}
