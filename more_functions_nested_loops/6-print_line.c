@@ -1,21 +1,22 @@
-#include <unistd.h>
-/* Déclaration de la fonction _putchar */
-void print_line(int n){
-if (n <= 0){
+#include "main.h"
+/**
+* print_line - Draws a straight line in the terminal
+* @n: The number of times the character '_' should be printed
+* If n is 0 or less, only a newline will be printed
+*/
+void print_line(int n)
+{
+int i;
+if (n <= 0)
+{
 _putchar('\n');
 }
-else{
-int i;
-for (i = 0; i < n; i++){
+else
+{
+for (i = 0; i < n; i++)
+{
 _putchar('_');
 }
 _putchar('\n');
 }
-}
-/* Fonction main pour tester print_line */
-int main(void) {
-print_line(5);
-print_line(0);
-print_line(-3);
-return 0;
 }
