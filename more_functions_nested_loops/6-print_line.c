@@ -1,7 +1,7 @@
 #include "main.h"
 /* Déclaration de la fonction _putchar */
-int _putchar(char c) {
-return write(1, &c, 1);
+*
+*/
 }
 void print_line(int n) {
 if (n <= 0) {
