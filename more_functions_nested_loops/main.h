@@ -9,4 +9,5 @@ void more_numbers(void); /* declaration qui imprime 10 fois les chiffres de 0 a 
 void print_line(int n); /* déclaration qui imprime ligne */
 void print_diagonal(int n);
 void print_square(int size);
+void print_triangle(int size);
 #endif /* MAIN_H */
