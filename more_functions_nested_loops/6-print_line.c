@@ -1,3 +1,4 @@
+#include "main.h"
 /* Déclaration de la fonction _putchar */
 int _putchar(char c) {
 return write(1, &c, 1);
@@ -15,8 +16,8 @@ _putchar('\n');
 }
 
 int main() {
-print_line(5);  // Affiche "_____"
-print_line(0);  // Affiche juste un saut de ligne
-print_line(-3); // Affiche juste un saut de ligne
+print_line(5);
+print_line(0);
+print_line(-3);
 return 0;
 }
