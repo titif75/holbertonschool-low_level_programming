@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_square - Fonction qui imprime un carré de taille 
+* print_square - Fonction qui imprime un carré de taille
 * `size` avec le caractère `#`.
 * @size: La taille du carré. Détermine le nombre de lignes et
 * de colonnes.
@@ -14,20 +14,21 @@
 */
 void print_square(int size)
 {
-int i; j;
+int i, j;
 if (size <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for (int i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
-for (int j = 0; j < size; j++)
+for (j = 0; j < size; j++)
 {
 _putchar('#');
 }
 _putchar('\n');
+}
 }
 }
 }
