@@ -7,4 +7,5 @@ void print_numbers(void); /* Déclaration de la fonction qui imprime les chiffre
 void print_most_numbers(void); /* déclaration sans imprimer les chiffres 2 et 4 */
 void more_numbers(void); /* declaration qui imprime 10 fois les chiffres de 0 a 14 */
 void print_line(int n); /* déclaration qui imprime ligne */
+void print_diagonal(int n);
 #endif /* MAIN_H */
