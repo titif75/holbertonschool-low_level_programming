@@ -1,9 +1,14 @@
 #include <stdio.h>
 /**
-* Le programme affiche les nombres de 1 à 100, avec "Fizz"
-* pour les multiples de 3, "Buzz" pour ceux de 5, et "FizzBuzz"
-* pour ceux qui sont multiples des deux. Chaque mot ou nombre est
-* séparé par un espace, et la dernière valeur est suivie d'un saut de ligne.
+* main - Imprime les nombres de 1 à 100, remplaçant
+* certains par Fizz, Buzz ou FizzBuzz.
+* Cette fonction parcourt les nombres de 1 à 100 et affiche chaque nombre. 
+* Cependant, pour les multiples de 3, elle affiche "Fizz",
+* pour les multiples de 5, 
+* elle affiche "Buzz", et pour les multiples de 3 et 5,
+* elle affiche "FizzBuzz".
+*
+* Return: Toujours 0 (succès)
 */
 int main(void)
 {
