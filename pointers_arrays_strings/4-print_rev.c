@@ -8,11 +8,11 @@
 void print_rev(char *s)
 {
 int length = 0;
-while (s[length] != '\0') 
+while (s[length] != '\0')
 {
 length++;
 }
-while (length > 0) 
+while (length > 0)
 {
 write(1, &s[length - 1], 1);
 length--;
