@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "main"
+
 /**
 * puts_half - Affiche la seconde moitié d'une chaîne, suivie d'un saut de ligne.
 * @str: Pointeur vers la chaîne de caractères
