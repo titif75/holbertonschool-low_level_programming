@@ -6,7 +6,12 @@ write(1, &c, 1);
 }
 void print_array(int *a, int n)
 {
-int i, num, temp, digits, k, divisor;
+int i;
+int num;
+int temp;
+int digits;
+int k;
+int divisor;
 for (i = 0; i < n; i++)
 {
 num = a[i];
