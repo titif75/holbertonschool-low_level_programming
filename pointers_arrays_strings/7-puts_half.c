@@ -1,5 +1,4 @@
 #include <unistd.h>
-
 /**
 * puts_half - Affiche la seconde moitié d'une chaîne,
 * suivie d'un saut de ligne.
@@ -16,7 +15,8 @@ length++;
 if (length % 2 == 0)
 {
 i = length / 2;
-} else
+}
+else
 {
 i = (length + 1) / 2;
 }
