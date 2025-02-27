@@ -1,37 +1,37 @@
 #include <unistd.h>
-
-void _putchar(char c) 
-{
+void _putchar(char c) {
 write(1, &c, 1);
 }
-void print_array(int *a, int n)
-{
-for (int i = 0; i < n; i++)
-{
-int num = a[i];
+void print_array(int *a, int n) {
+int i;
+int num;
 char str[10];
-int j = 0;
-if (num == 0) 
-{
+int j;
+int temp;
+int digits;
+int k;
+for (i = 0; i < n; i++) {
+num = a[i];
+if (num == 0) {
 _putchar('0');
-}
-else
+} 
+else 
 {
 if (num < 0) {
 _putchar('-');
 num = -num;
 }
-int temp = num;
-int digits = 0;
+temp = num;
+digits = 0;
 while (temp > 0) {
 temp /= 10;
 digits++;
 }
-for (int k = digits - 1; k >= 0; k--) {
+for (k = digits - 1; k >= 0; k--) {
 str[k] = (num % 10) + '0';
 num /= 10;
 }
-for (int k = 0; k < digits; k++) {
+for (k = 0; k < digits; k++) {
 _putchar(str[k]);
 }
 }
