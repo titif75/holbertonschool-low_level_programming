@@ -6,7 +6,6 @@ void print_array(int *a, int n) {
 int i;
 int num;
 char str[10];
-int j;
 int temp;
 int digits;
 int k;
