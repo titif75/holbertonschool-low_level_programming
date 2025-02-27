@@ -30,12 +30,12 @@ return (sign == 1) ? 2147483647 : -2147483648;
 if (result == 214748364)
 {
 if (sign == 1 && s[i] > '7')
-return 2147483647;
+return (2147483647);
 if (sign == -1 && s[i] > '8')
-return -2147483648;
+return (-2147483648);
 }
 result = result * 10 + (s[i] - '0');
 i++;
 }
-return result * sign;
+return (result * sign);
 }
