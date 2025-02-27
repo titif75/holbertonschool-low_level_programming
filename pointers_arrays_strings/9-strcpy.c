@@ -16,7 +16,7 @@ dest[i] = src[i];
 i++;
 }
 /* Copy the null terminator */
-dest[i] = '\0';    
+dest[i] = '\0';
 /* Return pointer to destination */
-return dest;
+return (dest);
 }
