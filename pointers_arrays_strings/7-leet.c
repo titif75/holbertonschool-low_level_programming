@@ -13,6 +13,7 @@ char codes[] = "4433007711";
 for (i = 0; s[i] != '\0'; i++)
 {
 for (j = 0; replacements[j] != '\0'; j++)
+{
 if (s[i] == replacements[j])
 {
 s[i] = codes[j];
