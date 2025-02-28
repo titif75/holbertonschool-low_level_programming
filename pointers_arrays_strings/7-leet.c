@@ -6,7 +6,7 @@
 */
 char *leet(char *s)
 {
-int i;
+int i, j;
 char replacements[] = "aAeEoOtTlL";
 char codes[] = "4433007711";
 for (i = 0; s[i] != '\0'; i++)
@@ -20,5 +20,5 @@ break;
 }
 }
 }
-return s;
+return (s);
 }
