@@ -1,20 +1,25 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* print_array - prints n elements of an array of integers
-* @a: array of integers
-* @n: number of elements to print
-* Return: void
+* leet - Encodes a string into 1337.
+* @s: The string to be encoded.
+* Return: The encoded string.
 */
-void print_array(int *a, int n)
+char *leet(char *s)
 {
 int i;
-for (i = 0; i < n; i++)
+int j;
+char replacements[] = "aAeEoOtTlL";
+char codes[] = "4433007711";
+for (i = 0; s[i] != '\0'; i++)
 {
-if (i != 0)
+for (j = 0; replacements[j] != '\0'; j++)
 {
-printf(", ");
+if (s[i] == replacements[j])
+{
+s[i] = codes[j];
+break;
 }
-printf("%d", a[i]);
 }
-printf("\n");
+}
+return (s);
 }
