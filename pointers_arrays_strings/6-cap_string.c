@@ -1,34 +1,37 @@
 #include "main.h"
-char *cap_string(char *str) 
+
+/**
+* cap_string - Capitalizes all words of a string
+* @s: The string to modify
+*
+* Return: Pointer to the modified string
+*/
+char *cap_string(char *s)
 {
-int new_word = 1;
-int i;
-for (i = 0; str[i] != '\0'; i++)
+int i = 0;
+int capitalize_next = 1;
+while (s[i] != '\0')
 {
-if (str[i] == ' ' || str[i] == '\t' || 
-str[i] == '\n' || str[i] == ',' || 
-str[i] == ';' || str[i] == '.' || 
-str[i] == '!' || str[i] == '?' || 
-str[i] == '"' || str[i] == '(' || 
-str[i] == ')' || str[i] == '{' || 
-str[i] == '}')
+
+if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' ||
+s[i] == ',' || s[i] == ';' || s[i] == '.' ||
+s[i] == '!' || s[i] == '?' || s[i] == '"' ||
+s[i] == '(' || s[i] == ')' || s[i] == '{' ||
+s[i] == '}')
 {
-new_word = 1;
+capitalize_next = 1;
 }
-else if (new_word && str[i] >= 'a' && str[i] <= 'z')
+
+else if (capitalize_next && s[i] >= 'a' && s[i] <= 'z')
 {
-str[i] = str[i] - 'a' + 'A';
-new_word = 0;
-} 
-else 
+s[i] = s[i] - 32;
+capitalize_next = 0;
+}
+else
 {
-new_word = 0;
+capitalize_next = 0;
 }
+i++;
 }
-return str;
-}
-int main() {
-char str[] = "hello, world! this is a test.";
-cap_string(str);
-return 0;
+return (s);
 }
