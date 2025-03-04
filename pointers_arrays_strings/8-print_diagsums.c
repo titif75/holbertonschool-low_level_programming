@@ -1,6 +1,12 @@
 #include "main.h"
 /**
-* initialisation des variables pour les sommes des deux diagonales
+* Calcule la somme des éléments des deux diagonales
+* d'une matrice carrée.
+* @param a Pointeur vers la matrice carrée
+* (tableau 1D représentant la matrice).
+* @param size Taille de la matrice (nombre de lignes/colonnes).
+* @param sums Tableau de taille 2 où seront stockées
+*  les sommes des diagonales.
 */
 void print_diagsums(int *a, int size){
 int sum_diag1 = 0, sum_diag2 = 0;
