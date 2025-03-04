@@ -1,15 +1,15 @@
 #include "main.h"
 /**
-* Affiche la somme des deux diagonales d'une matrice carrée.
-*
-* Cette fonction calcule la somme des deux diagonales
-* (principale et secondaire)
-* d'une matrice carrée représentée sous forme de
-* tableau 1D.
-* @param a Le tableau 1D représentant la matrice carrée.
-* @param size La taille de la matrice carrée
-* (nombre de lignes et de colonnes).
+* @brief Additionne deux entiers.
+* Cette fonction prend deux entiers en paramètre et
+* retourne leur somme.
+* @param a Le premier entier.
+* @param b Le deuxième entier.
+* @return La somme de a et b.
 */
+int add(int a, int b) {
+return a + b;
+}
 void print_diagsums(int *a, int size);
 {
 int i;
