@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* @brief Affiche la somme des deux diagonales d'une matrice carrée.
+* Affiche la somme des deux diagonales d'une matrice carrée.
 *
 * Cette fonction calcule la somme des deux diagonales
 * (principale et secondaire)
@@ -25,7 +25,7 @@ write(1, &sum1, sizeof(sum1));
 write(1, "Secondary diagonal sum: ", 24);
 write(1, &sum2, sizeof(sum2));
 }
-int main(void){
+int main(void) {
 int matrix[3][3] = {
 {1, 2, 3},
 {4, 5, 6},
