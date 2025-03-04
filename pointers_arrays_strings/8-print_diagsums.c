@@ -27,14 +27,12 @@ write(1, &sum2, sizeof(sum2));
 }
 /**
 * @brief Fonction principale qui exécute le programme.
-*
 * Cette fonction initialise une matrice carrée,
 * puis appelle la fonction `print_diagsums`
 * pour afficher les sommes des deux diagonales de la matrice.
-*
 * @return Retourne 0 en cas de succès.
 */
-int main(void) 
+int main(void)
 {
 int matrix[3][3] =
 {
