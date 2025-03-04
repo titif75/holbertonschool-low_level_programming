@@ -7,10 +7,11 @@
 * @param b Le deuxième entier.
 * @return La somme de a et b.
 */
-int add(int a, int b) {
-return a + b;
+int add(int a, int b) 
+{
+return (a + b);
 }
-void print_diagsums(int *a, int size);
+void print_diagsums(int *a, int size)
 {
 int i;
 int sum1 = 0;
