@@ -25,8 +25,19 @@ write(1, &sum1, sizeof(sum1));
 write(1, "Secondary diagonal sum: ", 24);
 write(1, &sum2, sizeof(sum2));
 }
-int main(void) {
-int matrix[3][3] = {
+/**
+* @brief Fonction principale qui exécute le programme.
+*
+* Cette fonction initialise une matrice carrée,
+* puis appelle la fonction `print_diagsums`
+* pour afficher les sommes des deux diagonales de la matrice.
+*
+* @return Retourne 0 en cas de succès.
+*/
+int main(void) 
+{
+int matrix[3][3] =
+{
 {1, 2, 3},
 {4, 5, 6},
 {7, 8, 9}
