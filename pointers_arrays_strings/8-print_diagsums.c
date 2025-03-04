@@ -1,7 +1,9 @@
 #include "main.h"
 /**
-* Calcule la somme des éléments des deux diagonales
-* d'une matrice carrée.
+* Calcule la somme des deux diagonales
+* d'une matrice carrée. la fonction prend une matrice carré,
+* puis calcule la somme de la diagonale principale et de la
+* diagonale secondaire, et stocke ces résultats dans un tableau.
 * @param a Pointeur vers la matrice carrée
 * (tableau 1D représentant la matrice).
 * @param size Taille de la matrice (nombre de lignes/colonnes).
