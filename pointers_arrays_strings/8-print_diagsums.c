@@ -10,7 +10,7 @@
 * @param size La taille de la matrice carrée
 * (nombre de lignes et de colonnes).
 */
-void print_diagsums(int *a, int size)
+void print_diagsums(int *a, int size);
 {
 int i;
 int sum1 = 0;
@@ -25,7 +25,7 @@ write(1, &sum1, sizeof(sum1));
 write(1, "Secondary diagonal sum: ", 24);
 write(1, &sum2, sizeof(sum2));
 }
-int main() {
+int main(void){
 int matrix[3][3] = {
 {1, 2, 3},
 {4, 5, 6},
