@@ -1,7 +1,15 @@
 #include "main.h"
 /**
-* affichage d'un echiquier de 8x8 dans le terminal,
-* tableau 2D
+* @brief Affiche un échiquier 8x8 dans la sortie standard.
+*
+* Cette fonction parcourt un tableau 2D de 8x8 caractères
+* représentant un échiquier
+* et affiche chaque case sur l'écran. Les caractères dans
+* le tableau représentent des
+* pièces d'échiquier (par exemple, 'R' pour une tour
+* blanche, 'r' pour une tour noire).
+*
+* @param a Un tableau 2D de 8x8 caractères représentant l'échiquier.
 */
 void print_chessboard(char (*a)[8]);
 {
