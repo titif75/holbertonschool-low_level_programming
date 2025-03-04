@@ -6,9 +6,8 @@
 * (principale et secondaire)
 * d'une matrice carrée représentée sous forme de
 * tableau 1D.
-*
 * @param a Le tableau 1D représentant la matrice carrée.
-* @param size La taille de la matrice carrée 
+* @param size La taille de la matrice carrée
 * (nombre de lignes et de colonnes).
 */
 void print_diagsums(int *a, int size)
@@ -16,7 +15,7 @@ void print_diagsums(int *a, int size)
 int i;
 int sum1 = 0;
 int sum2 = 0;
-for (i = 0; i < size; i++) 
+for (i = 0; i < size; i++)
 {
 sum1 += *(a + (i * size) + i);
 sum2 += *(a + (i * size) + (size - i - 1));
