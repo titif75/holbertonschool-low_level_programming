@@ -8,7 +8,8 @@
 * @param sums Tableau de taille 2 où seront stockées
 *  les sommes des diagonales.
 */
-void print_diagsums(int *a, int size){
+void print_diagsums(int *a, int size)
+{
 int sum_diag1 = 0, sum_diag2 = 0;
 for (int i = 0; i < size; i++)
 {
