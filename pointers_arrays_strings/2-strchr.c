@@ -1,18 +1,20 @@
 #include "main.h"
 /**
-* _memcpy - Copies n bytes from memory area src to memory area dest
-* @dest: Pointer to the destination memory area
-* @src: Pointer to the source memory area
-* @n: Number of bytes to copy
+* _strchr - Locates a character in a string
+* @s: The string to search
+* @c: The character to find
 *
-* Return: Pointer to dest
+* Return: Pointer to first occurrence of c in s, or NULL if not found
 */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-unsigned int i;
-for (i = 0; i < n; i++)
+while (*s != '\0')
 {
-dest[i] = src[i];
+if (*s == c)
+return (s);
+s++;
 }
-return (dest);
+if (c == '\0')
+return (s);
+return (NULL);
 }
