@@ -1,22 +1,30 @@
 #include "main.h"
 /**
-* Calcule la somme des deux diagonales
-* d'une matrice carrée. la fonction prend une matrice carré,
-* puis calcule la somme de la diagonale principale et de la
-* diagonale secondaire, et stocke ces résultats dans un tableau.
-* @param a Pointeur vers la matrice carrée
-* (tableau 1D représentant la matrice).
-* @param size Taille de la matrice (nombre de lignes/colonnes).
-* @param sums Tableau de taille 2 où seront stockées
-*  les sommes des diagonales.
+* print_diagsums - prints sums of diagonals in a square matrix
+* @a: pointer to start of matrix
+* @size: width of matrix column
 */
 void print_diagsums(int *a, int size)
 {
-int sum_diag1 = 0, sum_diag2 = 0;
-for (int i = 0; i < size; i++)
+int i, sum1 = 0, sum2 = 0;
+for (i = 0; i < size; i++)
 {
-sum_diag1 += *(a + i * size + i);
-sum_diag2 += *(a + i * size + (size - 1 - i));
+sum1 += a[i * size + i];
+sum2 += a[i * size + (size - 1 - i)];
 }
-sums[0] = sum_diag1;
-sums[1] = sum_diag2;
+print_number(sum1);
+_putchar(',');
+_putchar(' ');
+print_number(sum2);
+_putchar('\n');
+}
+/**
+* print_number - prints an integer
+* @n: integer to print
+*/
+void print_number(int n)
+{
+if (n / 10)
+print_number(n / 10);
+_putchar(n % 10 + '0');
+}
