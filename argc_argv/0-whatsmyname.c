@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+* main - Affiche le nom du programme
 * @argc: Nombre d'arguments
 * @argv: Tableau des arguments
 * Return: 0 en cas de succès
