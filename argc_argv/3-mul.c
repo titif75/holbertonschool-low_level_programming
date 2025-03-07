@@ -1,58 +1,61 @@
 #include "main.h"
 /**
-* main - Multiplie deux nombres et affiche le résultat
-* @argc: Nombre d'arguments
-* @argv: Tableau des arguments
-*
-* Si le programme reçoit deux arguments, il multiplie 
-* les deux et affiche le résultat.
-* Si le nombre d'arguments est incorrect, il affiche
-* "Error" et retourne 1.
+* _atoi - Convert a string to an integer
+* @s: String to be converted
+* Return: The int converted from the string, or -1 if invalid
+*/
+int _atoi(char *s)
+{
+int i, result = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+if (s[i] < '0' || s[i] > '9')
+return (-1);
+result = result * 10 + (s[i] - '0');
+}
+return (result);
+}
+/**
+* print_number - Prints an integer
+* @n: The integer to print
+*/
+void print_number(int n)
+{
+if (n / 10)
+print_number(n / 10);
+_putchar((n % 10) + '0');
+}
+/**
+* main - Add positive numbers
+* @argc: Number of arguments
+* @argv: Array of arguments
+* Return: 0 on success, 1 on error
 */
 int main(int argc, char *argv[])
 {
-if (argc != 3) 
+int sum = 0, num, i;
+if (argc == 1)
 {
-print_program_name("Error\n");
-return (1);
-}
-int num1 = 0, num2 = 0;
-for (int i = 0; argv[1][i] != '\0'; i++)
-{
-num1 = num1 * 10 + (argv[1][i] - '0');
-}
-for (int i = 0; argv[2][i] != '\0'; i++)
-{
-num2 = num2 * 10 + (argv[2][i] - '0');
-}
-int result = num1 * num2;
-print_number(result);
+_putchar('0');
 _putchar('\n');
 return (0);
 }
-int _putchar(char c)
+for (i = 1; i < argc; i++)
 {
-write(1, &c, 1);
+num = _atoi(argv[i]);
+if (num == -1)
+{
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 return (1);
 }
-void print_program_name(char *name)
-{
-while (*name)
-{
-_putchar(*name);
-name++;
+sum += num;
 }
-}
-void print_number(int n)
-{
-if (n < 0)
-{
-_putchar('-');
-n = -n;
-}
-if (n / 10 != 0)
-{
-print_number(n / 10);
-}
-_putchar(n % 10 + '0');
+print_number(sum);
+_putchar('\n');
+return (0);
 }
