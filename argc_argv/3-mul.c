@@ -12,11 +12,11 @@ if (argc != 3)
 return (1);
 }
 int num1 = 0, num2 = 0;
-for(int i = 0; argv[1][i] != '\0'; i++)
+for (int i = 0; argv[1][i] != '\0'; i++)
 {
 num1 = num1 * 10 + (argv[1][i] - '0');
 }
-for(int i = 0; argv[2][i] != '\0'; i++) 
+for (int i = 0; argv[2][i] != '\0'; i++) 
 {
 num2 = num2 * 10 + (argv[2][i] - '0');
 }
