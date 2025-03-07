@@ -1,22 +1,23 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
-* Programme qui multiplie deux nombres.
-* Usage: ./nom_du_programme nombre1 nombre2
-* Imprime le résultat de la multiplication, suivi d'une
-* nouvelle ligne.
-* Si le programme ne reçoit pas deux arguments, il imprime
-* "Error" et retourne 1.
+* main - Start program
+* @argc: Count argument
+* @argv: Array argument
+* Return: (int) Success
 */
 int main(int argc, char *argv[])
 {
-if (argc != 3)
+int a, b;
+(void)argc;
+if (!argv[1] || !argv[2])
 {
 printf("Error\n");
-return 1;
+return (1);
 }
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[2]);
-int result = num1 * num2;
-printf("%d\n", result);
-return 0;
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+printf("%d\n", a * b);
+return (0);
 }
