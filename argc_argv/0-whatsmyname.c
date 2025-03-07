@@ -7,9 +7,9 @@
 */
 int main(int argc, char *argv[])
 {
-(void)argc;
 char *prog_name = argv[0];
 int i = 0;
+(void)argc;
 while (prog_name[i])
 {
 _putchar(prog_name[i]);
