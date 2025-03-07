@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 int _putchar(char c);
-int _atoi(char *s);
+void print_program_name(char *name);
 void print_number(int n);
 #endif
