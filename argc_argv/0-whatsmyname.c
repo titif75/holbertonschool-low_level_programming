@@ -6,6 +6,7 @@
 */
 int main(int argc, char *argv[])
 {
+(void)argc;
 char *prog_name = argv[0];
 int i = 0;
 while (prog_name[i])
