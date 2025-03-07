@@ -3,7 +3,7 @@
 * main - multiplie deux nombres
 * @argc: nombre d'arguments
 * @argv: tableau des arguments
-* Return: 0 si succès, 1 si erreur
+* Return: (0) si succès, (1) si erreur
 */
 int main(int argc, char *argv[])
 {
