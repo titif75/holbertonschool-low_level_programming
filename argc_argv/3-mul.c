@@ -17,7 +17,7 @@ _putchar('o');
 _putchar('r');
 _putchar('\n');
 return (1);
-}
+i}
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
 result = num1 * num2;
