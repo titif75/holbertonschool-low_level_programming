@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
 * Programme qui multiplie deux nombres.
 * Usage: ./nom_du_programme nombre1 nombre2
