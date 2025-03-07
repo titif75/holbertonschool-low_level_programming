@@ -1,61 +1,23 @@
+#include <stdio.h>
 #include "main.h"
 /**
-* _atoi - Convert a string to an integer
-* @s: String to be converted
-* Return: The int converted from the string, or -1 if invalid
-*/
-int _atoi(char *s)
-{
-int i, result = 0;
-for (i = 0; s[i] != '\0'; i++)
-{
-if (s[i] < '0' || s[i] > '9')
-return (-1);
-result = result * 10 + (s[i] - '0');
-}
-return (result);
-}
-/**
-* print_number - Prints an integer
-* @n: The integer to print
-*/
-void print_number(int n)
-{
-if (n / 10)
-print_number(n / 10);
-_putchar((n % 10) + '0');
-}
-/**
-* main - Add positive numbers
-* @argc: Number of arguments
-* @argv: Array of arguments
-* Return: 0 on success, 1 on error
+* Programme qui multiplie deux nombres.
+* Usage: ./nom_du_programme nombre1 nombre2
+* Imprime le résultat de la multiplication, suivi d'une
+* nouvelle ligne.
+* Si le programme ne reçoit pas deux arguments, il imprime
+* "Error" et retourne 1.
 */
 int main(int argc, char *argv[])
 {
-int sum = 0, num, i;
-if (argc == 1)
+if (argc != 3)
 {
-_putchar('0');
-_putchar('\n');
-return (0);
+printf("Error\n");
+return 1;
 }
-for (i = 1; i < argc; i++)
-{
-num = _atoi(argv[i]);
-if (num == -1)
-{
-_putchar('E');
-_putchar('r');
-_putchar('r');
-_putchar('o');
-_putchar('r');
-_putchar('\n');
-return (1);
-}
-sum += num;
-}
-print_number(sum);
-_putchar('\n');
-return (0);
+int num1 = atoi(argv[1]);
+int num2 = atoi(argv[2]);
+int result = num1 * num2;
+printf("%d\n", result);
+return 0;
 }
