@@ -1,24 +1,27 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* create_array - Crée un tableau de caractères et
-* l'initialise avec un caractère donné.
-* @size: Taille du tableau à créer.
-* @c: Caractère utilisé pour initialiser le tableau.
+* *create_array - creates an array of chars,
+* and initializes it with a specific char
+* @size: size of the array to create
+* @c: char to initialize the array c
 *
-* Return: Pointeur vers le tableau ou NULL si l'allocation
-* échoue ou si size est 0.
+* Return: pointer to the array (Success), NULL (Error)
 */
 char *create_array(unsigned int size, char c)
 {
-char *array;
-unsigned int i;
-if (size == 0) // Vérifie si la taille est 0
+char *p;
+unsigned int i = 0;
+if (size == 0)
 return (NULL);
-array = malloc(size * sizeof(char));
-if (array == NULL)
-return (NULL);
-for (i = 0; i < size; i++)
-array[i] = c;
-return (array);
+p = (char *) malloc(sizeof(char) * size);
+if (p == NULL)
+return (0);
+while (i < size)
+{
+*(p + i) = c;
+i++;
+}
+*(p + i) = '\0';
+return (p);
 }
