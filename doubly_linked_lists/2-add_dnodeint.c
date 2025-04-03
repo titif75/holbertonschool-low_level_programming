@@ -1,21 +1,33 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
- * print_dlistint - Affiche tous les éléments d'une liste dlistint_t.
- * @h: Pointeur vers la tête de la liste.
+ * add_dnodeint - Adds a new node at the beginning of a doubly linked list
+ * @head: Double pointer to the head of the list
+ * @n: Value to store in the new node
  *
- * Return: Le nombre de nœuds dans la liste.
+ * Return: Address of the new element, or NULL if it failed
  */
-size_t print_dlistint(const dlistint_t *h)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-    size_t count = 0;
+    dlistint_t *new_node;
 
-    while (h != NULL)
-    {
-        printf("%d\n", h->n);
-        h = h->next;
-        count++;
-    }
+    /* Allocate memory for the new node */
+    new_node = malloc(sizeof(dlistint_t));
+    if (new_node == NULL)
+        return (NULL);
 
-    return (count);
+    /* Initialize the new node */
+    new_node->n = n;
+    new_node->prev = NULL;
+    new_node->next = *head;
+
+    /* If the list is not empty, update the previous pointer of the current head */
+    if (*head != NULL)
+        (*head)->prev = new_node;
+
+    /* Update the head pointer to point to the new node */
+    *head = new_node;
+
+    return (new_node);
 }
