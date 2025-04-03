@@ -1,7 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 /**
  * print_dlistint - Prints all the elements of a dlistint_t list.
  * @h: Pointer to the head of the list.
